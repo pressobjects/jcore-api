@@ -1,0 +1,425 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>JCore API docs: JCoreOPFMappingSQL: Class TJCoreOPFSQLGenerator</title>
+<meta name="generator" content="PasDoc 0.14.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="tipuesearch/jquery.min.js"></script>
+<script type="text/javascript" src="tipuesearch/tipuesearch_data.js"></script>
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<script type="text/javascript" src="tipuesearch/tipuesearch_set.js"></script>
+<script type="text/javascript" src="tipuesearch/tipuesearch.js"></script>
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>JCore API docs</h2><p><a href="overview.html" class="navigation">Overview</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="GVUses.png" class="navigation">Unit dependency graph</a></p><p><a href="GVClasses.png" class="navigation">Classes hierarchy graph</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        /* 10 items to display seems standard */
+        'show': 10,
+        /* For PasDoc docs, showing urls is not very useful,
+           since the page title already shows the unit and identifier. */
+        'showURL': false
+    });
+});
+</script>
+</p></td><td class="content">
+<a name="TJCoreOPFSQLGenerator"></a><h1 class="cio">Class TJCoreOPFSQLGenerator</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td>Properties</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="JCoreOPFMappingSQL.html">JCoreOPFMappingSQL</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TJCoreOPFSQLGenerator = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TJCoreOPFSQLGenerator</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#Create">Create</a></b>(const AMap: <a  href="JCoreOPFMetadata.TJCoreOPFMap.html">TJCoreOPFMap</a>; const AMapIndex: Integer); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildFieldName">BuildFieldName</a></b>(const AFieldName: string; const AMapIndex: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildFieldName">BuildFieldName</a></b>(const AMaps: <a  href="JCoreOPFMetadata.html#TJCoreOPFMaps">TJCoreOPFMaps</a>; const AMapIndex, AFieldIndex: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildFieldNames">BuildFieldNames</a></b>(const ABaseMapIdx: Integer; const AUseTablePrefix: Boolean): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildFieldParams">BuildFieldParams</a></b>(const AFieldCount: Integer): string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildInsertFields">BuildInsertFields</a></b>(const AMapping: <a  href="JCoreOPFMetadata.TJCoreOPFADMMapping.html">TJCoreOPFADMMapping</a>): <a  href="JCoreClasses.html#TJCoreStringArray">TJCoreStringArray</a>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildInsertLinkFields">BuildInsertLinkFields</a></b>(const AAttrMetadata: <a  href="JCoreOPFMetadata.TJCoreOPFAttrMetadata.html">TJCoreOPFAttrMetadata</a>): <a  href="JCoreClasses.html#TJCoreStringArray">TJCoreStringArray</a>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildOIDCondition">BuildOIDCondition</a></b>(const AOIDCount: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildOIDCondition">BuildOIDCondition</a></b>(const AMaps: <a  href="JCoreOPFMetadata.html#TJCoreOPFMaps">TJCoreOPFMaps</a>; const AMapIndex, AOIDCount: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildOIDCondition">BuildOIDCondition</a></b>(const AOIDNameArray: array of string; const AOIDCount: Integer): string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildOIDCondition">BuildOIDCondition</a></b>(const AOIDNameArray: array of string; const AMapIndex, AOIDCount: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildOIDName">BuildOIDName</a></b>(const AMaps: <a  href="JCoreOPFMetadata.html#TJCoreOPFMaps">TJCoreOPFMaps</a>; const AMapIndex, AOIDIndex: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildOIDName">BuildOIDName</a></b>(const AOIDNameArray: array of string; const AMapIndex, AOIDIndex: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildOIDNames">BuildOIDNames</a></b>(const AMaps: <a  href="JCoreOPFMetadata.html#TJCoreOPFMaps">TJCoreOPFMaps</a>; const AMapIndex: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildTableName">BuildTableName</a></b>(const AMaps: <a  href="JCoreOPFMetadata.html#TJCoreOPFMaps">TJCoreOPFMaps</a>; const AMapIndex: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildTableName">BuildTableName</a></b>(const ATableName: string; const AMapIndex: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildDeleteCondition">BuildDeleteCondition</a></b>(const AOIDCount: Integer): string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildInsertFieldNames">BuildInsertFieldNames</a></b>(const AFields: <a  href="JCoreClasses.html#TJCoreStringArray">TJCoreStringArray</a>): string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildSelectBaseFieldNames">BuildSelectBaseFieldNames</a></b>(const AUseTablePrefix: Boolean): string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildSelectBaseFrom">BuildSelectBaseFrom</a></b>(const AUseTablePrefix: Boolean): string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildSelectComplementaryFieldNames">BuildSelectComplementaryFieldNames</a></b>(const ABaseMapIdx: Integer; const AUseTablePrefix: Boolean): string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildSelectComplementaryFrom">BuildSelectComplementaryFrom</a></b>(const ABaseMapIdx: Integer; const AUseTablePrefix: Boolean): string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildSelectCondition">BuildSelectCondition</a></b>(const AOIDCount: Integer; const AUseTablePrefix: Boolean): string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildSelectExternalLinksCondition">BuildSelectExternalLinksCondition</a></b>(const AOwnerAttr: <a  href="JCoreOPFMetadata.TJCoreOPFAttrMetadata.html">TJCoreOPFAttrMetadata</a>): string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildSelectExternalLinksFrom">BuildSelectExternalLinksFrom</a></b>(const AOwnerAttr: <a  href="JCoreOPFMetadata.TJCoreOPFAttrMetadata.html">TJCoreOPFAttrMetadata</a>): string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildSelectFieldNames">BuildSelectFieldNames</a></b>(const AAttributes: <a  href="JCoreOPFMetadata.html#TJCoreOPFAttrMetadataArray">TJCoreOPFAttrMetadataArray</a>): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildSelectJoinCondition">BuildSelectJoinCondition</a></b>(const ALeftMaps: <a  href="JCoreOPFMetadata.html#TJCoreOPFMaps">TJCoreOPFMaps</a>; const ALeftIndex: Integer; const ALeftTablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>; const ARightMaps: <a  href="JCoreOPFMetadata.html#TJCoreOPFMaps">TJCoreOPFMaps</a>; const ARightIndex: Integer; const ARightTablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildUpdateCondition">BuildUpdateCondition</a></b>(const AMapping: <a  href="JCoreOPFMetadata.TJCoreOPFADMMapping.html">TJCoreOPFADMMapping</a>): string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildUpdateOrderField">BuildUpdateOrderField</a></b>(const AAttrMetadata: <a  href="JCoreOPFMetadata.TJCoreOPFAttrMetadata.html">TJCoreOPFAttrMetadata</a>): string; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildUpdateOrderCondition">BuildUpdateOrderCondition</a></b>(const AAttrMetadata: <a  href="JCoreOPFMetadata.TJCoreOPFAttrMetadata.html">TJCoreOPFAttrMetadata</a>): string; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMappingSQL.TJCoreOPFSQLGenerator.html#BuildUpdateNames">BuildUpdateNames</a></b>(const AMapping: <a  href="JCoreOPFMetadata.TJCoreOPFADMMapping.html">TJCoreOPFADMMapping</a>): string; virtual;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(const AMap: <a  href="JCoreOPFMetadata.TJCoreOPFMap.html">TJCoreOPFMap</a>; const AMapIndex: Integer); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildFieldName"></a><code>function <b>BuildFieldName</b>(const AFieldName: string; const AMapIndex: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildFieldName"></a><code>function <b>BuildFieldName</b>(const AMaps: <a  href="JCoreOPFMetadata.html#TJCoreOPFMaps">TJCoreOPFMaps</a>; const AMapIndex, AFieldIndex: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildFieldNames"></a><code>function <b>BuildFieldNames</b>(const ABaseMapIdx: Integer; const AUseTablePrefix: Boolean): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildFieldParams"></a><code>function <b>BuildFieldParams</b>(const AFieldCount: Integer): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildInsertFields"></a><code>function <b>BuildInsertFields</b>(const AMapping: <a  href="JCoreOPFMetadata.TJCoreOPFADMMapping.html">TJCoreOPFADMMapping</a>): <a  href="JCoreClasses.html#TJCoreStringArray">TJCoreStringArray</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildInsertLinkFields"></a><code>function <b>BuildInsertLinkFields</b>(const AAttrMetadata: <a  href="JCoreOPFMetadata.TJCoreOPFAttrMetadata.html">TJCoreOPFAttrMetadata</a>): <a  href="JCoreClasses.html#TJCoreStringArray">TJCoreStringArray</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildOIDCondition"></a><code>function <b>BuildOIDCondition</b>(const AOIDCount: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildOIDCondition"></a><code>function <b>BuildOIDCondition</b>(const AMaps: <a  href="JCoreOPFMetadata.html#TJCoreOPFMaps">TJCoreOPFMaps</a>; const AMapIndex, AOIDCount: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildOIDCondition"></a><code>function <b>BuildOIDCondition</b>(const AOIDNameArray: array of string; const AOIDCount: Integer): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildOIDCondition"></a><code>function <b>BuildOIDCondition</b>(const AOIDNameArray: array of string; const AMapIndex, AOIDCount: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildOIDName"></a><code>function <b>BuildOIDName</b>(const AMaps: <a  href="JCoreOPFMetadata.html#TJCoreOPFMaps">TJCoreOPFMaps</a>; const AMapIndex, AOIDIndex: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildOIDName"></a><code>function <b>BuildOIDName</b>(const AOIDNameArray: array of string; const AMapIndex, AOIDIndex: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildOIDNames"></a><code>function <b>BuildOIDNames</b>(const AMaps: <a  href="JCoreOPFMetadata.html#TJCoreOPFMaps">TJCoreOPFMaps</a>; const AMapIndex: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildTableName"></a><code>function <b>BuildTableName</b>(const AMaps: <a  href="JCoreOPFMetadata.html#TJCoreOPFMaps">TJCoreOPFMaps</a>; const AMapIndex: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildTableName"></a><code>function <b>BuildTableName</b>(const ATableName: string; const AMapIndex: Integer; const ATablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildDeleteCondition"></a><code>function <b>BuildDeleteCondition</b>(const AOIDCount: Integer): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildInsertFieldNames"></a><code>function <b>BuildInsertFieldNames</b>(const AFields: <a  href="JCoreClasses.html#TJCoreStringArray">TJCoreStringArray</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildSelectBaseFieldNames"></a><code>function <b>BuildSelectBaseFieldNames</b>(const AUseTablePrefix: Boolean): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildSelectBaseFrom"></a><code>function <b>BuildSelectBaseFrom</b>(const AUseTablePrefix: Boolean): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildSelectComplementaryFieldNames"></a><code>function <b>BuildSelectComplementaryFieldNames</b>(const ABaseMapIdx: Integer; const AUseTablePrefix: Boolean): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildSelectComplementaryFrom"></a><code>function <b>BuildSelectComplementaryFrom</b>(const ABaseMapIdx: Integer; const AUseTablePrefix: Boolean): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildSelectCondition"></a><code>function <b>BuildSelectCondition</b>(const AOIDCount: Integer; const AUseTablePrefix: Boolean): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildSelectExternalLinksCondition"></a><code>function <b>BuildSelectExternalLinksCondition</b>(const AOwnerAttr: <a  href="JCoreOPFMetadata.TJCoreOPFAttrMetadata.html">TJCoreOPFAttrMetadata</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildSelectExternalLinksFrom"></a><code>function <b>BuildSelectExternalLinksFrom</b>(const AOwnerAttr: <a  href="JCoreOPFMetadata.TJCoreOPFAttrMetadata.html">TJCoreOPFAttrMetadata</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildSelectFieldNames"></a><code>function <b>BuildSelectFieldNames</b>(const AAttributes: <a  href="JCoreOPFMetadata.html#TJCoreOPFAttrMetadataArray">TJCoreOPFAttrMetadataArray</a>): string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildSelectJoinCondition"></a><code>function <b>BuildSelectJoinCondition</b>(const ALeftMaps: <a  href="JCoreOPFMetadata.html#TJCoreOPFMaps">TJCoreOPFMaps</a>; const ALeftIndex: Integer; const ALeftTablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>; const ARightMaps: <a  href="JCoreOPFMetadata.html#TJCoreOPFMaps">TJCoreOPFMaps</a>; const ARightIndex: Integer; const ARightTablePrefixType: <a  href="JCoreOPFMappingSQL.html#TJCoreOPFTablePrefixType">TJCoreOPFTablePrefixType</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildUpdateCondition"></a><code>function <b>BuildUpdateCondition</b>(const AMapping: <a  href="JCoreOPFMetadata.TJCoreOPFADMMapping.html">TJCoreOPFADMMapping</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildUpdateOrderField"></a><code>function <b>BuildUpdateOrderField</b>(const AAttrMetadata: <a  href="JCoreOPFMetadata.TJCoreOPFAttrMetadata.html">TJCoreOPFAttrMetadata</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildUpdateOrderCondition"></a><code>function <b>BuildUpdateOrderCondition</b>(const AAttrMetadata: <a  href="JCoreOPFMetadata.TJCoreOPFAttrMetadata.html">TJCoreOPFAttrMetadata</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="BuildUpdateNames"></a><code>function <b>BuildUpdateNames</b>(const AMapping: <a  href="JCoreOPFMetadata.TJCoreOPFADMMapping.html">TJCoreOPFADMMapping</a>): string; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.14.0</a>. </em>
+</span>
+</td></tr></table></body></html>

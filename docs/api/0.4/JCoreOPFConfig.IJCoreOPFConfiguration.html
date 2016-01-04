@@ -1,0 +1,215 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>JCore API docs: JCoreOPFConfig: Interface IJCoreOPFConfiguration</title>
+<meta name="generator" content="PasDoc 0.14.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="tipuesearch/jquery.min.js"></script>
+<script type="text/javascript" src="tipuesearch/tipuesearch_data.js"></script>
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<script type="text/javascript" src="tipuesearch/tipuesearch_set.js"></script>
+<script type="text/javascript" src="tipuesearch/tipuesearch.js"></script>
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>JCore API docs</h2><p><a href="overview.html" class="navigation">Overview</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="GVUses.png" class="navigation">Unit dependency graph</a></p><p><a href="GVClasses.png" class="navigation">Classes hierarchy graph</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        /* 10 items to display seems standard */
+        'show': 10,
+        /* For PasDoc docs, showing urls is not very useful,
+           since the page title already shows the unit and identifier. */
+        'showURL': false
+    });
+});
+</script>
+</p></td><td class="content">
+<a name="IJCoreOPFConfiguration"></a><h1 class="cio">Interface IJCoreOPFConfiguration</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="JCoreOPFConfig.html">JCoreOPFConfig</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type IJCoreOPFConfiguration = interface(IInterface)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Interface of the global OPF configuration.</p>
+<p>
+
+
+<p>Use <a class="normal" href="JCoreOPFConfig.TJCoreOPFConfiguration.html">TJCoreOPFConfiguration</a> class to create a new configuration instance.
+
+<p></p>
+
+<pre class="longcode">
+    <span class="pascal_keyword">var</span>
+      VConfig: IJCoreOPFConfiguration;
+    <span class="pascal_keyword">begin</span>
+      VConfig := TJCoreOPFConfiguration.Create;
+    </pre>
+
+<p>
+
+<p></p>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">IInterface</li>
+<li class="thisitem">IJCoreOPFConfiguration</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#AddDriverClass">AddDriverClass</a></b>(const ADriverClassArray: array of <a  href="JCoreOPFDriver.html#TJCoreOPFDriverClass">TJCoreOPFDriverClass</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#AddMappingClass">AddMappingClass</a></b>(const AMappingClassArray: array of <a  href="JCoreOPFMapping.html#TJCoreOPFMappingClass">TJCoreOPFMappingClass</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#CreateSession">CreateSession</a></b>: <a  href="JCoreOPFSession.IJCoreOPFSession.html">IJCoreOPFSession</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#GetDriverClass">GetDriverClass</a></b>: <a  href="JCoreOPFDriver.html#TJCoreOPFDriverClass">TJCoreOPFDriverClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#GetDriverName">GetDriverName</a></b>: string;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#Model">Model</a></b>: <a  href="JCoreOPFMetadata.TJCoreOPFModel.html">TJCoreOPFModel</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#Params">Params</a></b>: TStringList;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#SetDriverClass">SetDriverClass</a></b>(const AValue: <a  href="JCoreOPFDriver.html#TJCoreOPFDriverClass">TJCoreOPFDriverClass</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#SetDriverName">SetDriverName</a></b>(const AValue: string);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#DriverClass">DriverClass</a></b>: <a  href="JCoreOPFDriver.html#TJCoreOPFDriverClass">TJCoreOPFDriverClass</a> read <a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#GetDriverClass">GetDriverClass</a> write <a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#SetDriverClass">SetDriverClass</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#DriverName">DriverName</a></b>: string read <a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#GetDriverName">GetDriverName</a> write <a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#SetDriverName">SetDriverName</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AddDriverClass"></a><code>procedure <b>AddDriverClass</b>(const ADriverClassArray: array of <a  href="JCoreOPFDriver.html#TJCoreOPFDriverClass">TJCoreOPFDriverClass</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Add an array of drivers to the configuration. Use <a class="normal" href="JCoreOPFConfig.IJCoreOPFConfiguration.html#DriverName">DriverName</a> property to define which driver should be used with new <a class="normal" href="JCoreOPFSession.IJCoreOPFSession.html">sessions</a>. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ADriverClassArray</dt>
+<dd>Array of drivers.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AddMappingClass"></a><code>procedure <b>AddMappingClass</b>(const AMappingClassArray: array of <a  href="JCoreOPFMapping.html#TJCoreOPFMappingClass">TJCoreOPFMappingClass</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CreateSession"></a><code>function <b>CreateSession</b>: <a  href="JCoreOPFSession.IJCoreOPFSession.html">IJCoreOPFSession</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetDriverClass"></a><code>function <b>GetDriverClass</b>: <a  href="JCoreOPFDriver.html#TJCoreOPFDriverClass">TJCoreOPFDriverClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetDriverName"></a><code>function <b>GetDriverName</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Model"></a><code>function <b>Model</b>: <a  href="JCoreOPFMetadata.TJCoreOPFModel.html">TJCoreOPFModel</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Params"></a><code>function <b>Params</b>: TStringList;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetDriverClass"></a><code>procedure <b>SetDriverClass</b>(const AValue: <a  href="JCoreOPFDriver.html#TJCoreOPFDriverClass">TJCoreOPFDriverClass</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetDriverName"></a><code>procedure <b>SetDriverName</b>(const AValue: string);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DriverClass"></a><code>property <b>DriverClass</b>: <a  href="JCoreOPFDriver.html#TJCoreOPFDriverClass">TJCoreOPFDriverClass</a> read <a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#GetDriverClass">GetDriverClass</a> write <a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#SetDriverClass">SetDriverClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DriverName"></a><code>property <b>DriverName</b>: string read <a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#GetDriverName">GetDriverName</a> write <a  href="JCoreOPFConfig.IJCoreOPFConfiguration.html#SetDriverName">SetDriverName</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.14.0</a>. </em>
+</span>
+</td></tr></table></body></html>

@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>JCore API docs: JCoreOPFMapping: Class TJCoreOPFMapping</title>
+<meta name="generator" content="PasDoc 0.14.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="tipuesearch/jquery.min.js"></script>
+<script type="text/javascript" src="tipuesearch/tipuesearch_data.js"></script>
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<script type="text/javascript" src="tipuesearch/tipuesearch_set.js"></script>
+<script type="text/javascript" src="tipuesearch/tipuesearch.js"></script>
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>JCore API docs</h2><p><a href="overview.html" class="navigation">Overview</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="GVUses.png" class="navigation">Unit dependency graph</a></p><p><a href="GVClasses.png" class="navigation">Classes hierarchy graph</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        /* 10 items to display seems standard */
+        'show': 10,
+        /* For PasDoc docs, showing urls is not very useful,
+           since the page title already shows the unit and identifier. */
+        'showURL': false
+    });
+});
+</script>
+</p></td><td class="content">
+<a name="TJCoreOPFMapping"></a><h1 class="cio">Class TJCoreOPFMapping</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td>Properties</td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="JCoreOPFMapping.html">JCoreOPFMapping</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TJCoreOPFMapping = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TJCoreOPFMapping</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="JCoreOPFMapping.TJCoreOPFMapping.html#Create">Create</a></b>(const AMapper: <a  href="JCoreOPFMapping.IJCoreOPFMapper.html">IJCoreOPFMapper</a>; const AMap: <a  href="JCoreOPFMetadata.TJCoreOPFMap.html">TJCoreOPFMap</a>; const AIsBaseMapping: Boolean); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="JCoreOPFMapping.TJCoreOPFMapping.html#Apply">Apply</a></b>(const AMap: <a  href="JCoreOPFMetadata.TJCoreOPFMap.html">TJCoreOPFMap</a>): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMapping.TJCoreOPFMapping.html#CreateCriteria">CreateCriteria</a></b>(const ARetriever: <a  href="JCoreOPFCriteria.IJCoreOPFCriteriaRetriever.html">IJCoreOPFCriteriaRetriever</a>): <a  href="JCoreOPFCriteria.IJCoreOPFSQLCriteria.html">IJCoreOPFSQLCriteria</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMapping.TJCoreOPFMapping.html#CreateEntity">CreateEntity</a></b>(const AResultSet: <a  href="JCoreOPFDriver.IJCoreOPFResultSet.html">IJCoreOPFResultSet</a>): TObject;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="JCoreOPFMapping.TJCoreOPFMapping.html#Dispose">Dispose</a></b>(const AOIDArray: array of <a  href="JCoreOPFOID.IJCoreOPFOID.html">IJCoreOPFOID</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMapping.TJCoreOPFMapping.html#RetrieveCollection">RetrieveCollection</a></b>(const AOwnerPID: <a  href="JCoreOPFMetadata.TJCoreOPFPID.html">TJCoreOPFPID</a>; const AOwnerADM: <a  href="JCoreOPFMetadata.TJCoreOPFADMCollection.html">TJCoreOPFADMCollection</a>): <a  href="JCoreOPFDriver.IJCoreOPFResultSet.html">IJCoreOPFResultSet</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMapping.TJCoreOPFMapping.html#RetrieveEntity">RetrieveEntity</a></b>(const AOIDArray: array of <a  href="JCoreOPFOID.IJCoreOPFOID.html">IJCoreOPFOID</a>; const ABaseMap: <a  href="JCoreOPFMetadata.TJCoreOPFMap.html">TJCoreOPFMap</a>): <a  href="JCoreOPFDriver.IJCoreOPFResultSet.html">IJCoreOPFResultSet</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="JCoreOPFMapping.TJCoreOPFMapping.html#RetrieveMappingFromResultSet">RetrieveMappingFromResultSet</a></b>(const AResultSet: <a  href="JCoreOPFDriver.IJCoreOPFResultSet.html">IJCoreOPFResultSet</a>; const AMapping: <a  href="JCoreOPFMetadata.TJCoreOPFADMMapping.html">TJCoreOPFADMMapping</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="JCoreOPFMapping.TJCoreOPFMapping.html#Store">Store</a></b>(const AMapping: <a  href="JCoreOPFMetadata.TJCoreOPFADMMapping.html">TJCoreOPFADMMapping</a>);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(const AMapper: <a  href="JCoreOPFMapping.IJCoreOPFMapper.html">IJCoreOPFMapper</a>; const AMap: <a  href="JCoreOPFMetadata.TJCoreOPFMap.html">TJCoreOPFMap</a>; const AIsBaseMapping: Boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Apply"></a><code>class function <b>Apply</b>(const AMap: <a  href="JCoreOPFMetadata.TJCoreOPFMap.html">TJCoreOPFMap</a>): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CreateCriteria"></a><code>function <b>CreateCriteria</b>(const ARetriever: <a  href="JCoreOPFCriteria.IJCoreOPFCriteriaRetriever.html">IJCoreOPFCriteriaRetriever</a>): <a  href="JCoreOPFCriteria.IJCoreOPFSQLCriteria.html">IJCoreOPFSQLCriteria</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CreateEntity"></a><code>function <b>CreateEntity</b>(const AResultSet: <a  href="JCoreOPFDriver.IJCoreOPFResultSet.html">IJCoreOPFResultSet</a>): TObject;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Dispose"></a><code>procedure <b>Dispose</b>(const AOIDArray: array of <a  href="JCoreOPFOID.IJCoreOPFOID.html">IJCoreOPFOID</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RetrieveCollection"></a><code>function <b>RetrieveCollection</b>(const AOwnerPID: <a  href="JCoreOPFMetadata.TJCoreOPFPID.html">TJCoreOPFPID</a>; const AOwnerADM: <a  href="JCoreOPFMetadata.TJCoreOPFADMCollection.html">TJCoreOPFADMCollection</a>): <a  href="JCoreOPFDriver.IJCoreOPFResultSet.html">IJCoreOPFResultSet</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RetrieveEntity"></a><code>function <b>RetrieveEntity</b>(const AOIDArray: array of <a  href="JCoreOPFOID.IJCoreOPFOID.html">IJCoreOPFOID</a>; const ABaseMap: <a  href="JCoreOPFMetadata.TJCoreOPFMap.html">TJCoreOPFMap</a>): <a  href="JCoreOPFDriver.IJCoreOPFResultSet.html">IJCoreOPFResultSet</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RetrieveMappingFromResultSet"></a><code>procedure <b>RetrieveMappingFromResultSet</b>(const AResultSet: <a  href="JCoreOPFDriver.IJCoreOPFResultSet.html">IJCoreOPFResultSet</a>; const AMapping: <a  href="JCoreOPFMetadata.TJCoreOPFADMMapping.html">TJCoreOPFADMMapping</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Store"></a><code>procedure <b>Store</b>(const AMapping: <a  href="JCoreOPFMetadata.TJCoreOPFADMMapping.html">TJCoreOPFADMMapping</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.14.0</a>. </em>
+</span>
+</td></tr></table></body></html>

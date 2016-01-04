@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<title>JCore API docs: JCoreOPFMetadata: Class TJCoreOPFPID</title>
+<meta name="generator" content="PasDoc 0.14.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="tipuesearch/jquery.min.js"></script>
+<script type="text/javascript" src="tipuesearch/tipuesearch_data.js"></script>
+<link rel="stylesheet" type="text/css" href="tipuesearch/tipuesearch.css">
+<script type="text/javascript" src="tipuesearch/tipuesearch_set.js"></script>
+<script type="text/javascript" src="tipuesearch/tipuesearch.js"></script>
+
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<h2>JCore API docs</h2><p><a href="overview.html" class="navigation">Overview</a></p><p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="GVUses.png" class="navigation">Unit dependency graph</a></p><p><a href="GVClasses.png" class="navigation">Classes hierarchy graph</a></p><p><form class="search-form" action="_tipue_results.html"><div class="search-input"><input type="text" name="q" id="tipue_search_input"></div><div class="search-button"><input type="button" id="tipue_search_button" onclick="this.form.submit();"></div></form>
+<div style="clear: both"></div>
+
+<script>
+$(document).ready(function() {
+    $('#tipue_search_input').tipuesearch({
+        /* 10 items to display seems standard */
+        'show': 10,
+        /* For PasDoc docs, showing urls is not very useful,
+           since the page title already shows the unit and identifier. */
+        'showURL': false
+    });
+});
+</script>
+</p></td><td class="content">
+<a name="TJCoreOPFPID"></a><h1 class="cio">Class TJCoreOPFPID</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section" href="#PasDoc-Description">Description</a></td><td><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section" href="#PasDoc-Methods">Methods</a></td><td><a class="section" href="#PasDoc-Properties">Properties</a></td></tr></table>
+<a name="PasDoc-Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="JCoreOPFMetadata.html">JCoreOPFMetadata</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TJCoreOPFPID = class(TInterfacedObject, <a class="normal" href="JCoreEntity.IJCorePID.html">IJCorePID</a>)</code></p>
+<h2 class="description">Description</h2>
+<a name="PasDoc-Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TInterfacedObject</li>
+<li class="thisitem">TJCoreOPFPID</li></ul><h2 class="overview">Overview</h2>
+<a name="PasDoc-Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#Create">Create</a></b>(const AEntity: TObject; const AMetadata: <a  href="JCoreOPFMetadata.TJCoreOPFClassMetadata.html">TJCoreOPFClassMetadata</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#AcquireADM">AcquireADM</a></b>(const AAttributeName: string): <a  href="JCoreOPFMetadata.TJCoreOPFADM.html">TJCoreOPFADM</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#ADMByName">ADMByName</a></b>(const AAttributeName: string): <a  href="JCoreEntity.IJCoreADM.html">IJCoreADM</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#ADMMappingCount">ADMMappingCount</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#AssignOwner">AssignOwner</a></b>(const AOwner: <a  href="JCoreOPFMetadata.TJCoreOPFPID.html">TJCoreOPFPID</a>; const AOwnerADM: <a  href="JCoreOPFMetadata.TJCoreOPFADMCollection.html">TJCoreOPFADMCollection</a>);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#AttachManager">AttachManager</a></b>(const APIDManager: <a  href="JCoreOPFMetadata.IJCoreOPFPIDManager.html">IJCoreOPFPIDManager</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#Commit">Commit</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#IsDirty">IsDirty</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#Lazyload">Lazyload</a></b>(const AAttrAddr: Pointer): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#ReadSequenceField">ReadSequenceField</a></b>(const AResultSet: <a  href="JCoreOPFDriver.IJCoreOPFResultSet.html">IJCoreOPFResultSet</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#WriteSequenceField">WriteSequenceField</a></b>(const AParams: <a  href="JCoreOPFDriver.IJCoreOPFParams.html">IJCoreOPFParams</a>);</code></td>
+</tr>
+</table>
+<a name="PasDoc-Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#ADMMapping">ADMMapping</a></b>[constAIndex:Integer]: <a  href="JCoreOPFMetadata.TJCoreOPFADMMapping.html">TJCoreOPFADMMapping</a> read GetADMMapping;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#IsPersistent">IsPersistent</a></b>: Boolean read FIsPersistent;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#Entity">Entity</a></b>: TObject read FEntity;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#Metadata">Metadata</a></b>: <a  href="JCoreOPFMetadata.TJCoreOPFClassMetadata.html">TJCoreOPFClassMetadata</a> read FMetadata;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#OID">OID</a></b>: <a  href="JCoreOPFOID.IJCoreOPFOID.html">IJCoreOPFOID</a> read FOID write SetOID;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#Owner">Owner</a></b>: <a  href="JCoreOPFMetadata.TJCoreOPFPID.html">TJCoreOPFPID</a> read FOwner;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#Sequence">Sequence</a></b>: Integer read FSequence write FSequence;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="JCoreOPFMetadata.TJCoreOPFPID.html#SequenceCache">SequenceCache</a></b>: Integer read FSequenceCache;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>(const AEntity: TObject; const AMetadata: <a  href="JCoreOPFMetadata.TJCoreOPFClassMetadata.html">TJCoreOPFClassMetadata</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AcquireADM"></a><code>function <b>AcquireADM</b>(const AAttributeName: string): <a  href="JCoreOPFMetadata.TJCoreOPFADM.html">TJCoreOPFADM</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ADMByName"></a><code>function <b>ADMByName</b>(const AAttributeName: string): <a  href="JCoreEntity.IJCoreADM.html">IJCoreADM</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ADMMappingCount"></a><code>function <b>ADMMappingCount</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AssignOwner"></a><code>procedure <b>AssignOwner</b>(const AOwner: <a  href="JCoreOPFMetadata.TJCoreOPFPID.html">TJCoreOPFPID</a>; const AOwnerADM: <a  href="JCoreOPFMetadata.TJCoreOPFADMCollection.html">TJCoreOPFADMCollection</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AttachManager"></a><code>procedure <b>AttachManager</b>(const APIDManager: <a  href="JCoreOPFMetadata.IJCoreOPFPIDManager.html">IJCoreOPFPIDManager</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Commit"></a><code>procedure <b>Commit</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsDirty"></a><code>function <b>IsDirty</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Lazyload"></a><code>function <b>Lazyload</b>(const AAttrAddr: Pointer): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ReadSequenceField"></a><code>procedure <b>ReadSequenceField</b>(const AResultSet: <a  href="JCoreOPFDriver.IJCoreOPFResultSet.html">IJCoreOPFResultSet</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="WriteSequenceField"></a><code>procedure <b>WriteSequenceField</b>(const AParams: <a  href="JCoreOPFDriver.IJCoreOPFParams.html">IJCoreOPFParams</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ADMMapping"></a><code>property <b>ADMMapping</b>[constAIndex:Integer]: <a  href="JCoreOPFMetadata.TJCoreOPFADMMapping.html">TJCoreOPFADMMapping</a> read GetADMMapping;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsPersistent"></a><code>property <b>IsPersistent</b>: Boolean read FIsPersistent;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Entity"></a><code>property <b>Entity</b>: TObject read FEntity;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Metadata"></a><code>property <b>Metadata</b>: <a  href="JCoreOPFMetadata.TJCoreOPFClassMetadata.html">TJCoreOPFClassMetadata</a> read FMetadata;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OID"></a><code>property <b>OID</b>: <a  href="JCoreOPFOID.IJCoreOPFOID.html">IJCoreOPFOID</a> read FOID write SetOID;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Owner"></a><code>property <b>Owner</b>: <a  href="JCoreOPFMetadata.TJCoreOPFPID.html">TJCoreOPFPID</a> read FOwner;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Sequence"></a><code>property <b>Sequence</b>: Integer read FSequence write FSequence;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SequenceCache"></a><code>property <b>SequenceCache</b>: Integer read FSequenceCache;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<hr noshade size="1"><span class="appinfo"><em>Generated by <a  href="http://pasdoc.sourceforge.net/">PasDoc 0.14.0</a>. </em>
+</span>
+</td></tr></table></body></html>
